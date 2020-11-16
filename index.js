@@ -4,9 +4,7 @@ const puppeteer = require('puppeteer');
   const browser = await puppeteer.launch({headless: false});
   const page = await browser.newPage();
   await page.goto('https://www.google.com');
-  await page.screenshot({path: 'google.png'});
+  // await page.screenshot({path: 'google.png'});
 
-  await setTimeout(() => {
-    browser.close();
-  }, 5000)
+  // await browser.close();
 })();
